@@ -19,7 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VN-Eq-O2B">
-                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                                <rect key="frame" x="187" y="369" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isPortait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-eT-Ynb">
+                                <rect key="frame" x="176" y="415" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isLandscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxP-S3-YxZ">
+                                <rect key="frame" x="159" y="461" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isFlat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76C-uo-SSG">
+                                <rect key="frame" x="187" y="507" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,12 +45,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2VN-Eq-O2B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9su-jK-uqZ"/>
-                            <constraint firstItem="2VN-Eq-O2B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W2G-Sb-J5A"/>
+                            <constraint firstItem="76C-uo-SSG" firstAttribute="top" secondItem="SxP-S3-YxZ" secondAttribute="bottom" constant="25" id="1Ui-Up-oUQ"/>
+                            <constraint firstItem="SxP-S3-YxZ" firstAttribute="top" secondItem="Nuy-eT-Ynb" secondAttribute="bottom" constant="25" id="9NF-lr-b8z"/>
+                            <constraint firstItem="2VN-Eq-O2B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-73.5" id="9su-jK-uqZ"/>
+                            <constraint firstItem="Nuy-eT-Ynb" firstAttribute="top" secondItem="2VN-Eq-O2B" secondAttribute="bottom" constant="25" id="DOf-21-NYA"/>
+                            <constraint firstItem="Nuy-eT-Ynb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Ll6-co-Wxs"/>
+                            <constraint firstItem="2VN-Eq-O2B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="1" id="W2G-Sb-J5A"/>
+                            <constraint firstItem="SxP-S3-YxZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aPi-jw-bUc"/>
+                            <constraint firstItem="76C-uo-SSG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="akX-Qx-zio"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="isFlatLabel" destination="76C-uo-SSG" id="maj-IU-mdZ"/>
+                        <outlet property="isLandscapeLabel" destination="SxP-S3-YxZ" id="sWF-QY-zpS"/>
+                        <outlet property="isPortraitLabel" destination="Nuy-eT-Ynb" id="K7B-uQ-qef"/>
                         <outlet property="orientationNameLabel" destination="2VN-Eq-O2B" id="nXj-M7-K0W"/>
                     </connections>
                 </viewController>
