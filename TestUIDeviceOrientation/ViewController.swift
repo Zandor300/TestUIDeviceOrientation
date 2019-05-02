@@ -9,9 +9,10 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(notification)
     }
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var orientationNameLabel: UILabel!
 
     private var notification: NSObjectProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
             object: nil,
             queue: .main,
             using: { [weak self] _ in
-                self?.label.text = {
+                self?.orientationNameLabel.text = {
                     if UIDevice.current.orientation.isPortrait {
                         return "Portrait"
                     } else if UIDevice.current.orientation.isLandscape {

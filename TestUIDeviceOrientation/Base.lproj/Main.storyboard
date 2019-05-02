@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="2VN-Eq-O2B" id="nXj-M7-K0W"/>
+                        <outlet property="orientationNameLabel" destination="2VN-Eq-O2B" id="nXj-M7-K0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
